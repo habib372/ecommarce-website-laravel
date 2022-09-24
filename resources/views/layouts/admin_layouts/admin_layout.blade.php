@@ -32,7 +32,7 @@
 
   <!-- Preloader -->
   <div class="preloader flex-column justify-content-center align-items-center">
-    <img class="animation__shake" src="{{asset('images/admin_images/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60" width="60">
+    <img class="animation__shake" src="{{asset('images/habib.jpg')}}" alt="PreloaderLogo" height="60" width="60">
   </div>
 
   @include('layouts.admin_layouts.admin_header')
@@ -83,7 +83,7 @@
 <!-- AdminLTE App -->
 <script src="{{ url('js/admin_js/adminlte.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{ url('js/admin_js/demo.js') }}"></script>
+<!-- <script src="{{ url('js/admin_js/demo.js') }}"></script> -->
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="{{ url('js/admin_js/pages/dashboard.js') }}"></script>
 </body>
