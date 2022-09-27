@@ -29,4 +29,5 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
     Route::group(['middleware'=>['admin']], function(){
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
     });
+    
 });
