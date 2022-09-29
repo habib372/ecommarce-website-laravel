@@ -27,5 +27,6 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
     Route::match(['get', 'post'], '/', [AdminController::class, 'login']);
     Route::group(['middleware'=>['admin']], function(){
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
+        Route::get('/logout', [AdminController::class, 'logout']);
     });
 });
