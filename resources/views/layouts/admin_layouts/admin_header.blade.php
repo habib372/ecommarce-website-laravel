@@ -48,7 +48,7 @@
       <!-- Logout -->
       <li class="nav-item">
         <a class="nav-link" href="{{url('/admin/logout')}}" role="button">
-        <i class="fa fa-sign-out-alt"></i>
+        <i class="fa fa-sign-out-alt" style="font-size:20px;color:red"></i>
         </a>
       </li>
     </ul>
