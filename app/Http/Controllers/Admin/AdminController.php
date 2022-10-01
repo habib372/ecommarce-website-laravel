@@ -18,7 +18,17 @@ class AdminController extends Controller
             $data = $request->all();
             // echo "<pre>"; print_r($data); die;
 
-            
+            $rulse = [
+                'email'=>'required|email|max:255',
+                'password'=>'required',
+             ];
+            $message = [
+                'email.required'=>'Email is required',
+                'email.email'=>'Invalid email address',
+                'password.required'=>'Password is required',
+             ];
+             $this->validate($request,$rulse,$message);
+
             if(Auth::guard('admin')->attempt(['email'=>$data['email'], 'password'=>$data['password']])){
                 return redirect('/admin/dashboard');
             }else{
