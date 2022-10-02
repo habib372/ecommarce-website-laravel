@@ -31,7 +31,10 @@ class AdminsTableSeeder extends Seeder
             ],
             [
                 'id'=>3, 'name'=>'User2 ', 'type'=>'User', 'mobile'=>'01767325485', 'email'=>'User@gmail.com', 'email_verified_at'=>now(), 'password'=>Hash::make('111'), 'image'=>'user.jpg', 'status'=>'3', 'remember_token' => Str::random(10), 'created_at'=>'2022-05-01', 'updated_at'=>'2022-03-01'
-            ],     
+            ],
+            [
+                'id'=>4, 'name'=>'User3 ', 'type'=>'User', 'mobile'=>'01767325658', 'email'=>'User1@gmail.com', 'email_verified_at'=>now(), 'password'=>Hash::make('321'), 'image'=>'user1.jpg', 'status'=>'4', 'remember_token' => Str::random(10), 'created_at'=>'2022-07-01', 'updated_at'=>'2022-10-01'
+            ],      
         ]);
 
     }
