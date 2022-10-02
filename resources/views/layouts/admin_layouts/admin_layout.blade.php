@@ -39,7 +39,9 @@
 
   @include('layouts.admin_layouts.admin_sidebar')
 
+  <div class="content-wrapper">
   @yield('content')
+  </div>
 
   @include('layouts.admin_layouts.admin_footer')
 
@@ -78,9 +80,9 @@
 <script src="{{ url('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
 <script src="{{ url('js/admin_js/adminlte.js') }}"></script>
-<!-- AdminLTE for demo purposes -->
+<!--  demo purposes -->
 <!-- <script src="{{ url('js/admin_js/demo.js') }}"></script> -->
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<!-- dashboard demo (This is only for demo purposes) -->
 <script src="{{ url('js/admin_js/pages/dashboard.js') }}"></script>
 </body>
 </html>
