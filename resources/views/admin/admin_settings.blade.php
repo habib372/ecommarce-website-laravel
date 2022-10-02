@@ -17,12 +17,16 @@
                         <form>
                             <div class="card-body">
                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Admin Name</label>
+                                    <input type="email" class="form-control" value="{{ $AdminDetails->name }}" readonly="">
+                                </div>
+                                <div class="form-group">
                                     <label for="exampleInputEmail1">Admin Email</label>
-                                    <input type="email" class="form-control" value="{{ Auth::guard('admin')->user()->email }}" readonly="">
+                                    <input type="email" class="form-control" value="{{ $AdminDetails->email }}" readonly="">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Admin Type</label>
-                                    <input type="text" class="form-control" value="{{Auth::guard('admin')->user()->type }}" readonly="">
+                                    <input type="text" class="form-control" value="{{ $AdminDetails->type }}" readonly="">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Current Password</label>

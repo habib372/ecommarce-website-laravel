@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Admin;
 use Auth;
 use Session;
 
@@ -14,7 +15,8 @@ class AdminController extends Controller
     }
 
     public function settings(){
-        return view('admin.admin_settings');
+        $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings', compact('AdminDetails'));
     }
 
     public function login(Request $request){
