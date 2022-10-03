@@ -1,7 +1,23 @@
 @extends('layouts.admin_layouts.admin_layout')
 @section('content')
 
-
+ <!-- Content Header (Page header) -->
+ <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Settings</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Settings</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row">
@@ -14,12 +30,8 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Admin Name</label>
-                                    <input type="email" class="form-control" value="{{ $AdminDetails->name }}" readonly="">
-                                </div>
+                        <form action="{{ url('/admin/settings')}}" method="post">
+                            <div class="card-body">                             
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Admin Email</label>
                                     <input type="email" class="form-control" value="{{ $AdminDetails->email }}" readonly="">
@@ -30,15 +42,15 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Current Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter current password">
+                                    <input type="password" class="form-control" name="current_password" id="current_password" placeholder="Enter current password">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">New Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter new password">
+                                    <input type="password" class="form-control" name="new_password" id="new_password" placeholder="Enter new password">
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Confirm Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter confirm password">
+                                    <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Enter confirm password">
                                 </div>                                   
                             </div>
                             <div class="card-footer">
