@@ -82,7 +82,11 @@
 <script src="{{ url('js/admin_js/adminlte.js') }}"></script>
 <!--  demo purposes -->
 <!-- <script src="{{ url('js/admin_js/demo.js') }}"></script> -->
-<!-- dashboard demo (This is only for demo purposes) -->
+<!-- dashboard demo (This is only for demo purposes)---->
 <script src="{{ url('js/admin_js/pages/dashboard.js') }}"></script>
+<!--  custom purposes -->
+<script src="{{ url('js/admin_js/admin_script.js') }}"></script>
+<!--  ddashboard3 -->
+<script src="{{ url('js/admin_js/pages/dashboard3.js') }}"></script>
 </body>
 </html>

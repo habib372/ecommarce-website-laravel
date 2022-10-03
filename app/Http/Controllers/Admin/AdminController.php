@@ -12,12 +12,7 @@ class AdminController extends Controller
 {
     public function dashboard(){
         return view('admin.admin_dashboard');
-    }
-
-    public function settings(){
-        $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
-        return view('admin.admin_settings', compact('AdminDetails'));
-    }
+    }  
 
     public function login(Request $request){
         if($request->isMethod('post')){
@@ -48,6 +43,11 @@ class AdminController extends Controller
     public function logout(){
         Auth::guard('admin')->logout();
         return redirect('/admin');
+    }
+
+    public function userlist(){
+        $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
+        return view('admin.admin_settings', compact('AdminDetails'));
     }
 
    

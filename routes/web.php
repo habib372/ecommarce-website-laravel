@@ -28,6 +28,6 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
     Route::group(['middleware'=>['admin']], function(){
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
         Route::get('/logout', [AdminController::class, 'logout']);
-        Route::get('/settings', [AdminController::class, 'settings']);
+        Route::get('/userlist', [AdminController::class, 'userlist']);
     });
 });

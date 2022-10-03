@@ -43,95 +43,97 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+            <i class='nav-icon fas fa-shopping-bag'></i>
               <p>
-                Widgets
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
+                Products
+                <i class="fas fa-angle-left right"></i> 
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
+                  <p>Add Product</p>
                 </a>
               </li>  
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Navigation</p>
+                  <p> Manage Products</p>
                 </a>
               </li>                      
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
+              <i class="nav-icon fas fa-list-ul"></i>
               <p>
-                Charts
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>cart</p>
-                </a>
-              </li>             
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="{{url('/admin/settings')}}" class="nav-link">
-            <i class="fas fa-tree nav-icon"></i>
-              <p>
-                Settings           
-              </p>
-            </a>           
-          </li>                               
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
+                Category
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/mailbox/mailbox.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
+                  <p>Add Category</p>
                 </a>
-              </li>
+              </li>  
               <li class="nav-item">
-                <a href="pages/mailbox/compose.html" class="nav-link">
+                <a href="#" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
+                  <p> Manage Category</p>
                 </a>
-              </li>
-              <li class="nav-item">
-                <a href="pages/examples/contact-us.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
+              </li>                      
             </ul>
-          </li>                     
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fa fa-users"></i>
+              <p>
+                Customers              
+              </p>
+            </a>           
+          </li>  
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Orders
+              </p>
+            </a>          
+          </li>
+          <li class="nav-item">
+            <a href="{{url('/admin/userlist')}}" class="nav-link">
+              <i class="nav-icon fas fa-users-cog"></i>
+              <p>
+                Our Staff                
+              </p>
+            </a>           
+          </li>  
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+            <i class="fas fa-cogs nav-icon"></i>
+              <p>
+                Settings   
+                <i class="fas fa-angle-left right"></i>        
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Layout</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>colors</p>
+                </a>
+              </li>             
+            </ul>           
+          </li>                                                  
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

@@ -30,7 +30,7 @@
                         </div>
                         <!-- /.card-header -->
                         <!-- form start -->
-                        <form action="{{ url('/admin/settings')}}" method="post">
+                        <form action="{{ url('/admin/userlist')}}" method="post">
                             <div class="card-body">                             
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Admin Email</label>
