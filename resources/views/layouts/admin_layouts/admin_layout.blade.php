@@ -45,8 +45,6 @@
 
   @include('layouts.admin_layouts.admin_footer')
 
-  
-
 </div>
 <!-- ./wrapper -->
 
