@@ -31,7 +31,9 @@ class AdminController extends Controller
              $this->validate($request,$rulse,$message);
 
             if(Auth::guard('admin')->attempt(['email'=>$data['email'], 'password'=>$data['password']])){
-                return redirect('/admin/dashboard');
+                if(Auth::guard('admin')->user()->status == 1){
+                    return redirect('/admin/dashboard');
+                }
             }else{
                 Session::flash('error_msg','Invalid email or password');
                 return redirect()->back();
@@ -47,7 +49,7 @@ class AdminController extends Controller
 
     public function userlist(){
         $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
-        return view('admin.admin_settings', compact('AdminDetails'));
+        return view('admin.admin_list', compact('AdminDetails'));
     }
 
    
