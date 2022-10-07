@@ -47,7 +47,7 @@ class AdminController extends Controller
         return redirect('/admin');
     }
 
-    public function userlist(){
+    public function adminlist(){
         $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
         return view('admin.admin_list', compact('AdminDetails'));
     }

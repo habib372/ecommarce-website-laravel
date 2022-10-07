@@ -33,23 +33,23 @@
                         <form action="{{ url('/admin/userlist')}}" method="post">
                             <div class="card-body">                             
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Admin Email</label>
+                                    <label for="adminemail">Admin Email</label>
                                     <input type="email" class="form-control" value="{{ $AdminDetails->email }}" readonly="">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Admin Type</label>
+                                    <label for="admintype">Admin Type</label>
                                     <input type="text" class="form-control" value="{{ $AdminDetails->type }}" readonly="">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Current Password</label>
+                                    <label for="currentpassword">Current Password</label>
                                     <input type="password" class="form-control" name="current_password" id="current_password" placeholder="Enter current password">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">New Password</label>
+                                    <label for="newpassword">New Password</label>
                                     <input type="password" class="form-control" name="new_password" id="new_password" placeholder="Enter new password">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Confirm Password</label>
+                                    <label for="confirmpassword">Confirm Password</label>
                                     <input type="password" class="form-control" name="confirm_password" id="confirm_password" placeholder="Enter confirm password">
                                 </div>                                   
                             </div>

@@ -68,7 +68,7 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-list-ul"></i>
               <p>
-                Category
+                Sections
                 <i class="fas fa-angle-left right"></i>
               </p>
             </a>
@@ -80,9 +80,9 @@
                 </a>
               </li>  
               <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="{{url('/admin/sections')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
-                  <p> Manage Category</p>
+                  <p> Manage Sections</p>
                 </a>
               </li>                      
             </ul>
@@ -119,7 +119,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="{{url('/admin/userlist')}}" class="nav-link">
+                <a href="{{url('/admin/adminlist')}}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Manage Admin</p>
                 </a>

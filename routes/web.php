@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\Admin\SectionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +29,8 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
     Route::group(['middleware'=>['admin']], function(){
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
         Route::get('/logout', [AdminController::class, 'logout']);
-        Route::get('/userlist', [AdminController::class, 'userlist']);
+        Route::get('/adminlist', [AdminController::class, 'adminlist']);
+        //sections
+        Route::get('/sections', [SectionController::class, 'sections']);
     });
 });
