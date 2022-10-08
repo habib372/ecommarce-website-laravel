@@ -24,6 +24,7 @@
                     <div class="card">
                     <div class="card-header">
                         <h3 class="card-title">Sections</h3>
+                        <button type="button" class="btn btn-default btn-sm float-right border-primary" name="add-new-section"  data-toggle="modal" data-target="#add-new-section"><i class="fas fa-plus"></i> Add New Section</button>
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
@@ -33,6 +34,7 @@
                                     <th>ID</th>
                                     <th>Section name</th>
                                     <th>Status</th>                        
+                                    <th>Actions</th>                        
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -40,7 +42,21 @@
                                 <tr>
                                     <td>{{$section->id}}</td>
                                     <td>{{$section->name}}</td>
-                                    <td>{{$section->status}}</td>                       
+                                    <td>
+                                      @if($section->status == 1)
+                                        <a href="javascript:void(0)">Active</a>
+                                      @else
+                                      <a href="javascript:void(0)">Inactive</a>
+                                      @endif                                     
+                                    </td>
+                                    <td>
+                                      <a type="button" class="btn btn-default btn-sm float-left mr-1 border-success" name="edit-section" data-toggle="modal" data-target="#edit-section" title="edit" value="edit"><i class="fas fa-edit"></i></a>
+                                      <form action="#" method="#" onsubmit="return confirm('Are you sure?')">
+                                        <!-- @csrf
+                                        @method("DELETE") -->
+                                        <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete"><i class="far fa-trash-alt"></i></button>
+                                      </form>
+                                  </td>                       
                                 </tr> 
                                 @endforeach                       
                             </tbody>                       

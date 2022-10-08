@@ -23,7 +23,7 @@
             <div class="card">
               <div class="card-header">
                 <h3 class="card-title"><strong>Admin list</strong></h3>
-                <button type='button' class='btn btn-default btn-sm float-right' name='CtSubmit'  data-toggle='modal' data-target='#create-product'>Create New Admin</i></button>
+                <button type='button' class='btn btn-default btn-sm float-right' name='create-new-admin'  data-toggle='modal' data-target='#create-new-admin'>Create New Admin</button>
               </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
