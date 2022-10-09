@@ -7,13 +7,16 @@ use Illuminate\Http\Request;
 use App\Models\Admin;
 use Auth;
 use Session;
+use DB;
 
 class AdminController extends Controller
 {
+    //dashboard
     public function dashboard(){
         return view('admin.admin_dashboard');
     }  
 
+    //login
     public function login(Request $request){
         if($request->isMethod('post')){
             $data = $request->all();
@@ -42,14 +45,16 @@ class AdminController extends Controller
         return view('admin.admin_login');
     }
 
+    //logout
     public function logout(){
         Auth::guard('admin')->logout();
         return redirect('/admin');
     }
 
+    //show all admin
     public function adminlist(){
         $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
-        return view('admin.admin_list', compact('AdminDetails'));
+        return view('admin.admin_list', ['AdminDetails'=>$AdminDetails]);
     }
 
 }

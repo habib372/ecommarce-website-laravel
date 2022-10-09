@@ -54,9 +54,9 @@
                                       <form action="#" method="#" onsubmit="return confirm('Are you sure?')">
                                         <!-- @csrf
                                         @method("DELETE") -->
-                                        <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete"><i class="far fa-trash-alt"></i></button>
+                                        <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete" title="delete"><i class="far fa-trash-alt"></i></button>
                                       </form>
-                                  </td>                       
+                                    </td>                       
                                 </tr> 
                                 @endforeach                       
                             </tbody>                       
