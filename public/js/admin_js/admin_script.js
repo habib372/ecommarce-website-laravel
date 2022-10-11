@@ -11,7 +11,7 @@ $(function () {
                 if(resp['status']==0){
                     $("#section-"+section_id).html("<a class='UpdateSectionStatus text-danger' href='javascript:void(0)'>Inactive</a>");
                 }else if(resp['status']==1){
-                    $("#section-"+section_id).html("<a class='UpdateSectionStatus '  href='javascript:void(0)'>Active</a>");
+                    $("#section-"+section_id).html("<a class='UpdateSectionStatus text-primary'  href='javascript:void(0)'>Active</a>");
                 }           
             },error:function(){
                 alert('Error');
