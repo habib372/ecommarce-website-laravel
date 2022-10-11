@@ -27,7 +27,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
-                <table class="table table-hover table-bordered table-striped text-nowrap ">
+                <table class="table table-hover table-bordered table-striped ">
                   <thead>
                     <tr>
                       <th>Name</th>

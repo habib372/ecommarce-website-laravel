@@ -46,7 +46,7 @@
                                       @if($section->status == 1)
                                         <a class="UpdateSectionStatus" id="section-{{$section->id}}" section_id="{{$section->id}}" href="javascript:void(0)">Active</a>
                                       @else
-                                        <a class="UpdateSectionStatus" id="section-{{$section->id}}" section_id="{{$section->id}}" href="javascript:void(0)">Inactive</a>
+                                        <a class="UpdateSectionStatus text-danger" id="section-{{$section->id}}" section_id="{{$section->id}}" href="javascript:void(0)">Inactive</a>
                                       @endif                                     
                                     </td>
                                     <td>
