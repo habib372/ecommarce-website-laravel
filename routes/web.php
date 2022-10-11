@@ -30,7 +30,9 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
         Route::get('/dashboard', [AdminController::class, 'dashboard']);
         Route::get('/logout', [AdminController::class, 'logout']);
         Route::get('/adminlist', [AdminController::class, 'adminlist']);
+
         //sections
         Route::get('/sections', [SectionController::class, 'sections']);
+        Route::post('/update-section-status', [SectionController::class, 'UpdateSectionStatus']);
     });
 });
