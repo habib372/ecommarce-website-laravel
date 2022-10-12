@@ -27,7 +27,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body table-responsive p-0">
-                <table class="table table-hover table-bordered table-striped ">
+                <table class="table table-hover table-bordered table-striped text-nowrap ">
                   <thead>
                     <tr>
                       <th>Name</th>
@@ -43,10 +43,10 @@
                     <tr>
                       <td><img src="{{asset('images/habib.jpg')}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image"> {{ $AdminDetails->name}}</td>
                       <td>{{ $AdminDetails->mobile}}</td>
-                      <td>habib@gmail.com</td>                    
-                      <td>hashing</td>                    
-                      <td>Superadmin</td>                    
-                      <td>1</td>                       
+                      <td>{{ $AdminDetails->email}}</td>                    
+                      <td>hash password</td>                    
+                      <td>{{ $AdminDetails->type}}</td>                    
+                      <td>{{ $AdminDetails->status}}</td>                       
                       <td>
                         <a type="button" class="btn btn-default btn-sm float-left mr-1 border-success" name="edit-section" data-toggle="modal" data-target="#edit-section" title="edit" value="edit"><i class="fas fa-edit"></i></a>
                         <form action="#" method="#" onsubmit="return confirm('Are you sure?')">
@@ -62,7 +62,7 @@
                     <tr>
                       <td><img src="{{asset('images/habib.jpg')}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image">&nbsp;  Tauhidul Islam</td>
                       <td>+8801767177372</td>
-                      <td>habibhasan351@gmail.com</td>                    
+                      <td>subadmin51@gmail.com</td>                    
                       <td>hashing</td>                    
                       <td>Subadmin</td>                    
                       <td>0</td>                    

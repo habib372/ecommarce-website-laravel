@@ -7,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
+    
+
     //add button with modal
     <button type="button" class="btn btn-default btn-sm float-right border-primary" name="add-new-section"  data-toggle="modal" data-target="#add-new-section"><i class="fas fa-plus"></i> Add New Section</button>
 
@@ -20,6 +22,7 @@
         <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete" title="delete"><i class="far fa-trash-alt"></i>
         </button>
     </form>
+
 
 </body>
 </html>

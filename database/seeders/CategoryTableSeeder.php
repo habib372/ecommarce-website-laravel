@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use DB;
-class SectionsTableSeeder extends Seeder
+class CategoryTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,9 +13,9 @@ class SectionsTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('sections')->delete();
+        DB::table('categories')->delete();
 
-        DB::table('sections')->insert([                                   
+        DB::table('categories')->insert([                                   
             [ 'name'=>'Men', 'status'=>'1' ],
             [ 'name'=>'Women', 'status'=>'1' ],
             [ 'name'=>'Kids', 'status'=>'0' ],
