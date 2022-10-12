@@ -1,21 +1,91 @@
 @extends('layouts.admin_layouts.admin_layout')
 @section('content')
+
+<!----content-header ---->
 <div class="content-header">
-      <div class="container-fluid">
-        <div class="row mb-2">
-          <div class="col-sm-6">
-            <h1 class="m-0">Sections</h1>
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="{{url('/admin/dashboard')}}">Home</a></li>
-              <li class="breadcrumb-item active">Sections</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
-    <!-- /.content-header -->
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h1 class="m-0">Sections</h1>
+      </div><!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item"><a href="{{url('/admin/dashboard')}}">Home</a></li>
+          <li class="breadcrumb-item active">Sections</li>
+        </ol>
+      </div><!-- /.col -->
+    </div><!-- /.row -->
+  </div><!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+
+<!----- Add Sections Model ------>
+<div class="modal fade" id="add-new-section">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary">
+            <div class="modal-header">
+              <h4 class="modal-title">Add New Section</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="#" method="post">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="adminemail">Section Name:</label>
+                  <input type="text" class="form-control" value="" placeholder="Enter section name..">
+                </div>
+                <div class="form-group">
+                  <label for="adminemail">Section Status:</label>
+                  <input type="number" class="form-control" value=""  placeholder="1 = Active, 0 = Inactive" >
+                </div>
+              </div> 
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-danger text-white" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-success text-white">Save</button>
+              </div>
+            </form> 
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+  <!---/.modal ---->
+
+  <!---- Edit Sections Model ------->
+    <div class="modal fade" id="update-section">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary">
+            <div class="modal-header">
+              <h4 class="modal-title">Update Section</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="#" method="post">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="adminemail">Section Name:</label>
+                  <input type="text" class="form-control" value="" placeholder="Enter section name..">
+                </div>
+                <div class="form-group">
+                  <label for="adminemail">Section Status:</label>
+                  <input type="number" class="form-control" value=""  placeholder="1 = Active, 0 = Inactive" >
+                </div>
+              </div> 
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-danger text-white" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-success text-white">Update</button>
+              </div>
+            </form> 
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+  <!-------- /.modal ------------>
+
+  <!-------main Sections table------->
     <section class="content-header">
         <div class="container-fluid">
             <div class="row">
@@ -50,7 +120,7 @@
                                       @endif                                     
                                     </td>
                                     <td>
-                                      <a type="button" class="btn btn-default btn-sm float-left mr-1 border-success" name="edit-section" data-toggle="modal" data-target="#edit-section" title="edit" value="edit"><i class="fas fa-edit"></i></a>
+                                      <a type="button" class="btn btn-default btn-sm float-left mr-1 border-success" name="edit-section" data-toggle="modal" data-target="#update-section" title="edit" value="edit"><i class="fas fa-edit"></i></a>
                                       <form action="#" method="#" onsubmit="return confirm('Are you sure?')">
                                         <!-- @csrf
                                         @method("DELETE") -->

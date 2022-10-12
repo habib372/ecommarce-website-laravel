@@ -8,6 +8,39 @@
 </head>
 <body>
     
+//Add modal / edit modal
+  <!-------------Edit Sections Model --------------->
+    <div class="modal fade" id="update-section-modal">
+        <div class="modal-dialog">
+          <div class="modal-content bg-secondary">
+            <div class="modal-header">
+              <h4 class="modal-title">Update Name</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <form action="#" method="post">
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="adminemail">Section Name:</label>
+                  <input type="text" class="form-control" value="" placeholder="Enter section name..">
+                </div>
+                <div class="form-group">
+                  <label for="adminemail">Section Status:</label>
+                  <input type="number" class="form-control" value=""  placeholder="1 = Active, 0 = Inactive" >
+                </div>
+              </div> 
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-outline-danger text-white" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-success text-white">Save</button>
+              </div>
+            </form> 
+          </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+  <!-------- /.modal ------------>
 
     //add button with modal
     <button type="button" class="btn btn-default btn-sm float-right border-primary" name="add-new-section"  data-toggle="modal" data-target="#add-new-section"><i class="fas fa-plus"></i> Add New Section</button>
