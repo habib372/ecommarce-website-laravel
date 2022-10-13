@@ -55,7 +55,7 @@
   <!---- Edit Sections Model ------->
     <div class="modal fade" id="update-section">
         <div class="modal-dialog">
-          <div class="modal-content bg-secondary">
+          <div class="modal-content bg-secondary ">
             <div class="modal-header">
               <h4 class="modal-title">Update Section</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -126,7 +126,7 @@
                                         @method("DELETE") -->
                                         <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete" title="delete"><i class="far fa-trash-alt"></i></button>
                                       </form>
-                                    </td>                       
+                                    </td>                  
                                 </tr> 
                                 @endforeach                       
                             </tbody>                       
