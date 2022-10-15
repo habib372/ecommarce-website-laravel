@@ -9,12 +9,12 @@ use Session;
 
 class CategoryController extends Controller
 {
-    // public function category(){
-    //     Session::put('page','category');
-    //     $Categories = Category::all();
-    //     return view('admin.category.category', compact('Categories'));
-    // }
-
+    public function category(){
+        Session::put('page','category');
+        $Categories = Category::all();
+        return view('admin.category.category', compact('Categories'));
+    }
+    //category status ajax
     // public function UpdateCategoryStatus(Request $request){
     //     if($request->ajax()){
     //         $data = $request->all();

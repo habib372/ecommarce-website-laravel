@@ -9,7 +9,7 @@
 <body>
     
 //Add modal / edit modal
-  <!-------------Edit Sections Model --------------->
+    <!-------------Edit Sections Model --------------->
     <div class="modal fade" id="update-section-modal">
         <div class="modal-dialog">
           <div class="modal-content bg-secondary">
@@ -40,7 +40,7 @@
         </div>
         <!-- /.modal-dialog -->
       </div>
-  <!-------- /.modal ------------>
+    <!-------- /.modal ------------>
 
     //add button with modal
     <button type="button" class="btn btn-default btn-sm float-right border-primary" name="add-new-section"  data-toggle="modal" data-target="#add-new-section"><i class="fas fa-plus"></i> Add New Section</button>
