@@ -39,7 +39,7 @@
                       <th>action</th>                      
                     </tr>
                   </thead>
-                  <tbody>           
+                  <tbody>          
                     <tr>
                       <td><img src="{{asset('images/habib.jpg')}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image"> {{ $AdminDetails->name}}</td>
                       <td>{{ $AdminDetails->mobile}}</td>
@@ -55,9 +55,8 @@
                           <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete" title="delete"><i class="far fa-trash-alt"></i></button>
                         </form>
                       </td>                     
-                    <tr>             
+                    <tr>          
                   </tbody>
-
                   <tbody>
                     <tr>
                       <td><img src="{{asset('images/habib.jpg')}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image">&nbsp;  Tauhidul Islam</td>

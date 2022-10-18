@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\SectionController;
+use App\Http\Controllers\Admin\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,7 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
         Route::post('/update-section-status', [SectionController::class, 'UpdateSectionStatus']);
 
         //categories
-        Route::get('/categories', [CategoriesController::class, 'categories']);
+        Route::get('/categories', [CategoryController::class, 'categories']);
+        
     });
 });
