@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\SectionController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\SubCategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,8 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
 
         //categories
         Route::get('/categories', [CategoryController::class, 'categories']);
-        
+
+        //subcategories
+        Route::get('/subcategories', [SubCategoryController::class, 'subcategories']);
     });
 });
