@@ -42,5 +42,11 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
 
         //subcategories
         Route::get('/subcategories', [SubCategoryController::class, 'subcategories']);
+
+        //Products
+        Route::get('/products', [ProductController::class, 'Product']);
+
+        //brand
+        Route::get('/brand', [ProductController::class, 'brand']);
     });
 });
