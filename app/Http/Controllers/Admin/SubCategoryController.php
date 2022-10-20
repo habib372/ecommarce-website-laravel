@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Subcategory;
 use Session;
 
-class SubCategoryController extends Controller
+class SubcategoryController extends Controller
 {
     public function subcategories(){
         Session::put('page','subcategory');
