@@ -41,12 +41,12 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
         Route::get('/categories', [CategoryController::class, 'categories']);
 
         //subcategories
-        Route::get('/subcategories', [SubCategoryController::class, 'subcategories']);
+        Route::get('/subcategories', [SubcategoryController::class, 'subcategories']);
 
         //Products
-        Route::get('/products', [ProductController::class, 'Product']);
+        Route::get('/products', [ProductController::class, 'Products']);
 
         //brand
-        Route::get('/brand', [ProductController::class, 'brand']);
+        Route::get('/brands', [ProductController::class, 'brands']);
     });
 });

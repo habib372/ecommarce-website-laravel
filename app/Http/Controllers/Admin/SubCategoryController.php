@@ -11,6 +11,6 @@ class SubcategoryController extends Controller
     public function subcategories(){
         Session::put('page','subcategory');
         $subcategories =Subcategory::all();
-        return view('admin.subcategory.subcategory');
+        return view('admin.subcategories.subcategory');
     }
 }
