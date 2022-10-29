@@ -48,5 +48,6 @@ Route::prefix('/admin')->namespace('Admin')->group(function(){
 
         //brand
         Route::get('/brands', [ProductController::class, 'brands']);
+        
     });
 });
