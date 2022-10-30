@@ -38,15 +38,15 @@
                                 </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($Categories as $Category)
+                                @foreach($categories as $category)
                                 <tr>
-                                    <td>{{$Category->id}}</td>
-                                    <td>{{$Category->name}}</td>
+                                    <td>{{$category->id}}</td>
+                                    <td>{{$category->name}}</td>
                                     <td>
-                                      @if($Category->status == 1)
-                                        <a class="UpdateCategoryStatus text-primary" id="category-{{$Category->id}}" category_id="{{$Category->id}}" href="javascript:void(0)">Active</a>
+                                      @if($category->status == 1)
+                                        <a class="UpdateCategoryStatus text-primary" id="category-{{$category->id}}" category_id="{{$category->id}}" href="javascript:void(0)">Active</a>
                                       @else
-                                        <a class="UpdateCategoryStatus text-danger" id="category-{{$Category->id}}" category_id="{{$Category->id}}" href="javascript:void(0)">Inactive</a>
+                                        <a class="UpdateCategoryStatus text-danger" id="category-{{$category->id}}" category_id="{{$Category->id}}" href="javascript:void(0)">Inactive</a>
                                       @endif                                     
                                     </td>
                                     <td>

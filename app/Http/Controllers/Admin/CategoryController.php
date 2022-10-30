@@ -11,8 +11,8 @@ class CategoryController extends Controller
 {
     public function category(){
         Session::put('page','category');
-        $Categories = Category::all();
-        return view('admin.categories.category', compact('Categories'));
+        $categories = Category::all();
+        return view('admin.categories.category', compact('categories'));
     }
     //category status ajax
     // public function UpdateCategoryStatus(Request $request){
