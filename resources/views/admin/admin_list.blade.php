@@ -39,14 +39,15 @@
                       <th>action</th>                      
                     </tr>
                   </thead>
-                  <tbody>          
+                  <tbody>  
+                    @foreach($adminDetails as $adminDetail)        
                     <tr>
-                      <td><img src="{{asset('images/habib.jpg')}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image"> {{ $AdminDetails->name}}</td>
-                      <td>{{ $AdminDetails->mobile}}</td>
-                      <td>{{ $AdminDetails->email}}</td>                    
+                      <td><img src="{{asset('images/admin_images/'.$adminDetail->image)}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image"> {{ $adminDetail->name}}</td>
+                      <td>{{ $adminDetail->mobile}}</td>
+                      <td>{{ $adminDetail->email}}</td>                    
                       <td>hash password</td>                    
-                      <td>{{ $AdminDetails->type}}</td>                    
-                      <td>{{ $AdminDetails->status}}</td>                       
+                      <td>{{ $adminDetail->type}}</td>                    
+                      <td>{{ $adminDetail->status}}</td>                       
                       <td>
                         <a type="button" class="btn btn-default btn-sm float-left mr-1 border-success" name="edit-section" data-toggle="modal" data-target="#edit-section" title="edit" value="edit"><i class="fas fa-edit"></i></a>
                         <form action="#" method="#" onsubmit="return confirm('Are you sure?')">
@@ -55,26 +56,9 @@
                           <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete" title="delete"><i class="far fa-trash-alt"></i></button>
                         </form>
                       </td>                     
-                    <tr>          
-                  </tbody>
-                  <tbody>
-                    <tr>
-                      <td><img src="{{asset('images/habib.jpg')}}" high="30px" width="30px" class="img-circle elevation-2" alt="User Image">&nbsp;  Tauhidul Islam</td>
-                      <td>+8801767177372</td>
-                      <td>subadmin51@gmail.com</td>                    
-                      <td>hashing</td>                    
-                      <td>Subadmin</td>                    
-                      <td>0</td>                    
-                      <td>
-                        <a type="button" class="btn btn-default btn-sm float-left mr-1 border-success" name="edit-section" data-toggle="modal" data-target="#edit-section" title="edit" value="edit"><i class="fas fa-edit"></i></a>
-                        <form action="#" method="#" onsubmit="return confirm('Are you sure?')">
-                          @csrf
-                          @method("DELETE")
-                          <button type="submit" class="btn btn-default btn-sm btn-delete border-danger" name="delete-section" value="delete" title="delete"><i class="far fa-trash-alt"></i></button>
-                        </form>
-                      </td>             
-                    <tr>                   
-                  </tbody>
+                    <tr>  
+                    @endforeach        
+                  </tbody>               
                 </table>
               </div>
               <!-- /.card-body -->

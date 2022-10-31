@@ -53,8 +53,9 @@ class AdminController extends Controller
 
     //show all admin
     public function adminlist(){
-        $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
-        return view('admin.admin_list', ['AdminDetails'=>$AdminDetails]);
+        // $AdminDetails = Admin::where('email', Auth::guard('admin')->user()->email)->first();
+        $adminDetails = Admin::all();
+        return view('admin.admin_list', ['adminDetails'=>$adminDetails]);
     }
 
 }
