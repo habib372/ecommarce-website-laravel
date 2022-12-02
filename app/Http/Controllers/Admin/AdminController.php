@@ -57,5 +57,6 @@ class AdminController extends Controller
         $adminDetails = Admin::all();
         return view('admin.admin_list', ['adminDetails'=>$adminDetails]);
     }
-
+    
+    
 }
